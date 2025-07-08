@@ -5,6 +5,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.tyrone.backroomsmod.init.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,17 +21,9 @@ public class BackroomsMod {
         // Register deferred registries
         BackroomsBlocks.BLOCKS.register(modEventBus);
         BackroomsItems.ITEMS.register(modEventBus);
-        BackroomsStructures.STRUCTURES.register(modEventBus);
         BackroomsStructures.STRUCTURE_TYPES.register(modEventBus);
         BackroomsStructures.STRUCTURE_PIECES.register(modEventBus);
-        BackroomsFeatures.FEATURES.register(modEventBus);
-        BackroomsBiomes.BIOMES.register(modEventBus);
-        BackroomsDimensions.DIMENSIONS.register(modEventBus);
         BackroomsProcessorTypes.PROCESSOR_TYPES.register(modEventBus);
-        BackroomsTemplatepools.TEMPLATE_POOLS.register(modEventBus);
-
-        // Register events
-        modEventBus.addListener(BackroomsDimension::registerDimension);
 
         LOGGER.info("Backrooms mod initialized!");
     }
