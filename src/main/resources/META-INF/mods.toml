@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+
+[[mods]]
+modId="backrooms"
+version="1.0.0"
+displayName="Backrooms Mod"
+description='''
+Enter the Backrooms - an infinite maze of yellow rooms with buzzing fluorescent lights.
+Features procedurally generated structures using jigsaw blocks for endless exploration.
+'''
+logoFile="logo.png"
+credits=""
+authors="Pumpkin"
+
+[[dependencies.backrooms]]
+modId="forge"
+mandatory=true
+versionRange="[43.3.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.backrooms]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="BOTH"
